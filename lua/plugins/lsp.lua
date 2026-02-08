@@ -19,6 +19,7 @@ return {
         vim.lsp.enable('gopls')
         vim.lsp.enable('lua_ls')
         vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
+        vim.keymap.set('n', '<C-e>', vim.diagnostic.open_float, {})
     end
     },
 }
